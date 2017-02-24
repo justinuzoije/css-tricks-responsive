@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS-Tricks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .top_bar {
+        overflow: auto;
+        padding: 10px;
+        height: 10%;
+        width: 100%;
+      }
+
+      #hamburger {
+        float: left;
+      }
+
+      #logo {
+        float: left;
+      }
+
+      #text-field {
+        float:right;
+        font-size: 100%;
+      }
+
+      #search_icon {
+        float: right;
+      }
+      .content {
+        overflow: auto;
+        float: left;
+        border-style: solid;
+        border-color: #444444;
+        border-width: 15px;
+        width: 75%
+      }
+
+      .content_top {
+        padding: 20px;
+      }
+
+      #chain_icon {
+        float: right;
+      }
+
+      .date_bar {
+        background-color: #E6E6E6;
+        padding: 1px;
+      }
+
+      .side_bar {
+        overflow: auto;
+        float: right;
+        width: 25%;
+        padding: 20px;
+        background-color: #EEEEEE;
+      }
+
+    /*
+    Media Query:
+    If the screen is smaller than 400px,
+    apply the following CSS rules.
+    */
+    @media (max-width: 400px){
+
+      #search_icon {
+        float: right;
+      }
+
+      #text-field {
+        text-align: center;
+        float: left;
+        font-size: 1.8em;
+        width: 14em;
+      }
+
+      .content {
+        overflow: auto;
+        float: left;
+        border-style: solid;
+        border-color: #444444;
+        border-width: 15px;
+        width: 100%
+      }
+
+      .side_bar {
+        overflow: auto;
+        float: left;
+        clear: left;
+        width: 100%;
+        padding: 20px;
+        background-color: #EEEEEE;
+      }
+
+      #ad_image {
+        text-align: center;
+      }
+
+      #ad_text {
+        text-align: center;
+      }
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="top_bar">
+      <div id="hamburger"><img src="assets/hamburger.png" width="60px" height="40px"></div>
+      <div id="logo"><img src="assets/logo.png" width="225px" height="40px"></div>
+      <div id="search_icon"><img src="assets/search.png" width="50px" height="40px"></div>
+      <div id="text-field"><input type="text" size="25" maxlength="4"></div>
+    </div>
+    <div class="content">
+      <div class="content_top">
+        <div id="chain_icon"><img src="assets/link.png" width="50px" height="40px"></div>
+        <h1>Do responsive sites have to be so tall on mobile?</h1>
+      </div>
+      <div class="date_bar">
+        <p><span style="color:#00A0EF">#</span> February 22, 2017 by <span style="color:#00A0EF">CHRIS COYER</span></p>
+      </div>
+      <div class="content_bottom">
+        <p>
+          Kevin Vigneault:
+          <br>
+          BLOCKQUOTE
+          I don't believe that the overall page length itself is inherently problematic. I
+          have noticed though that in many responsive designs, purposeful groupings of content
+          are easy to spot on larger screens, but get muddled when things start to stack on mobile screens.
+          BLOCKQUOTE
+
+          This is probably mostly a problem on "content" sites in which you smash
+          things down into the ol' tube of content. I don't mind the tube, but I
+          think Kevin is doing some smart thinking here. There are plenty of different
+          patterns that can happen while tubizing, and it's probably not thought about enough.
+        </p>
+      </div>
+    </div>
+    <div class="side_bar">
+      <div id="ad_image"><img src="assets/get-hired.png" width="260px" height="150px"></div>
+      <div id="ad_text">TEXT</div>
+    </div>
+
+
+  </body>
+</html>
